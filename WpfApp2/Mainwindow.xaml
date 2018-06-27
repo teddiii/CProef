@@ -1,0 +1,22 @@
+﻿<Fluent:RibbonWindow x:Class="Fluent.sample.Foundation.Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
+        Title="Fluent.Sample.Foundation" Width="525" Height="350" >
+    <Grid>
+        <Fluent:Ribbon>
+            <!--Backstage-->
+            <Fluent:Ribbon.Menu>
+                <Fluent:Backstage>
+                </Fluent:Backstage>
+            </Fluent:Ribbon.Menu>
+            
+            <!--Tabs-->
+            <Fluent:RibbonTabItem Header="Home">
+                <Fluent:RibbonGroupBox x:Name="grpProducts" Header="Home">
+                    <Fluent:Button x:Name="btnProductOverview" Header="Product Overview" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+    </Grid>
+</Fluent:RibbonWindow>
